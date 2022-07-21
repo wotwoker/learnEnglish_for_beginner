@@ -125,7 +125,7 @@ def recite_word():  # 背单词
                 bu = r.randint(0, 1)  # 记录布尔值0或1
                 x = index.split("-")[bu].strip('\n')  # 随机选取英文或汉语
                 y = index.split("-")[(bu + 1) % 2].replace('\n', '').replace('\r', '')  # 选取x的反
-                # split分的汉语最后有个换行符，淦，用 .replace('\n', '').replace('\r', '') 或 .strip('\n') 可以去掉换行符
+                # split分的汉语最后有个换行符，淦，我说哪里有问题，这里用 .replace('\n', '').replace('\r', '') 或 .strip('\n') 可以去掉换行符
                 print("\n随机英语或汉语:")
                 print(">------>   " + x)
 
